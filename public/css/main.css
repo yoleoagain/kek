@@ -5,6 +5,10 @@
   font-family: 'Press Start 2P', cursive;
 }
 
+* {
+  color: var(--main);
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -13,12 +17,21 @@
 }
 
 
+.gb {
+  margin-bottom: var(--gap);
+}
+
 .self-center {
   align-self: center;
 }
 
 .text-center {
   text-align: center;
+}
+
+.column.between {
+  justify-content: space-between;
+  height: 100%;
 }
 
 .row.center {
@@ -36,4 +49,8 @@
 
 .fw {
   width: 100%;
+}
+
+.bage {
+  color:
 }

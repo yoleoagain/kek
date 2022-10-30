@@ -3,15 +3,28 @@
 }
 
 .profile__photo {
-  font-size: 6px;
-  /* margin-top: -250px;
-  margin-left: 120px; */
+  font-size: 5px;
 }
 
 
-
 .about__info {
-  /* margin-left: -30px; */
-  margin-left: var(--gap-half);
+  margin-left: -120px;
+  margin-left: var(--gap);
   max-width: 550px;
+}
+
+.core-tech {
+  margin-top: 70px;
+}
+
+.core-tech>*:not(:last-child) {
+  margin-right: var(--gap-half);
+}
+
+.core-tech>* {
+  background-color: var(--main);
+  color: var(--invert);
+  padding: var(--gap-half);
+  border-radius: 6px;
+  font-size: 12px;
 }

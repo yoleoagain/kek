@@ -1,4 +1,8 @@
 ﻿:root {
+  --main: #555555;
+  --invert: #ffffff;
+
   --gap: 20px;
   --gap-half: 10px;
+  --gap-quarter: 6px;
 }
