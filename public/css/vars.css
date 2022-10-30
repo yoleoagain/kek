@@ -1,3 +1,4 @@
-﻿:root() {
+﻿:root {
   --gap: 20px;
+  --gap-half: 10px;
 }
