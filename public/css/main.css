@@ -1,0 +1,36 @@
+﻿@import "reset.css";
+@import "vars.css";
+
+*:not(pre) {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+
+.self-center {
+  align-self: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+.row,
+.column {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.fw {
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+﻿.logo {
+  margin-left: -70px;
+}
+
+.profile__photo {
+  transform: scale(0.5);
+  margin-top: -250px;
+  margin-left: 120px;
+}
+
+.about__info {
+  margin-left: -120px;
+  max-width: 550px;
+}
