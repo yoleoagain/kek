@@ -29,7 +29,15 @@ module.exports = {
             },
         ],
     },
+
     plugins: [
-        new htmlWebpackPlugin({ inject: true, template: 'public/index.html' }),
-        new CleanWebpackPlugin(), new WebpackManifestPlugin()],
+        new htmlWebpackPlugin({
+            chunks: ['manifest', 'vendor', 'app'],
+            inject: true,
+            optimization: { realContentHash: false },
+            template: 'public/index.html'
+        }),
+        new CleanWebpackPlugin(),
+        new WebpackManifestPlugin()
+    ],
 }
