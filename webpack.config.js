@@ -2,6 +2,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackPluginHashOutput = require('webpack-plugin-hash-output')
 
 module.exports = {
     name: 'client',
@@ -31,8 +32,9 @@ module.exports = {
     },
 
     plugins: [
+        new WebpackPluginHashOutput(),
         new htmlWebpackPlugin({
-            chunks: ['manifest', 'vendor', 'app'],
+            hash: false,
             inject: true,
             optimization: { realContentHash: false },
             template: 'public/index.html'
