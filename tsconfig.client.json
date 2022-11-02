@@ -1,0 +1,16 @@
+﻿{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "build",
+    "module": "CommonJS", // generate ES modules
+    "target": "es5", // target ES5 API
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "moduleResolution": "Node"
+  },
+  "include": [
+    "src/client"
+  ]
+}

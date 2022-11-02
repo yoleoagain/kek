@@ -1,5 +1,14 @@
 ﻿.logo {
   margin-left: -70px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.logo:hover .d {
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  transform: scale(1.4);
 }
 
 .profile__photo {
@@ -14,7 +23,7 @@
 }
 
 .core-tech {
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 .core-tech>*:not(:last-child) {

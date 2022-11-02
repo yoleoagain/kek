@@ -8,4 +8,7 @@
     "outDir": "build",
     "moduleResolution": "Node"
   },
+  "include": [
+    "src/server"
+  ],
 }

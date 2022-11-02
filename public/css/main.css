@@ -1,7 +1,7 @@
 ﻿@import "reset.css";
 @import "vars.css";
 
-*:not(pre) {
+*:not(pre, pre>span) {
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -49,8 +49,4 @@
 
 .fw {
   width: 100%;
-}
-
-.bage {
-  color:
 }
