@@ -90,6 +90,8 @@
     </div>
     </main>
     <script>var exports = {};</script>
-    <script src="public/client/pages/main.f2272ab2f54a2b15bdff.js"></script>
+    <% for (var js in htmlWebpackPlugin.files.js) { %>
+        <script src="public/client/pages/<%= htmlWebpackPlugin.files.js[js] %>"></script>
+    <% } %>
   </body>
 </html>

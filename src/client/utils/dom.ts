@@ -1,17 +1,21 @@
-﻿import { interval, of, delay, map } from 'rxjs'
+﻿import { of, delay, from, concatMap } from 'rxjs'
 
 export const plotTextToNode = (text: string, selector: string) => {
-  console.log(text, selector);
+    const node = document.querySelector(selector) as HTMLDivElement
+    const docsTechNode = document.querySelector('.core-tech') as HTMLDivElement
 
-  const node = document.querySelector(selector) as HTMLDivElement
-  if (!node) return
-  const chars = text.split('')
-  of(chars)
-    .pipe(
-      delay(30),
-      map((v, i) => {
-        console.log(v[i], v)
-        node.innerText += v[i]
-      })
-    )
+    if (!node) return
+    const chars = text.split('')
+
+    from(chars)
+        .pipe(
+            concatMap(item => of(item).pipe(delay(30)))
+        )
+        .subscribe(v => {
+            node.innerHTML += v
+            if (node.innerText.length === chars.length) {
+                docsTechNode.style.display = 'flex'
+                node.classList.add('completed')
+            }
+        })
 }

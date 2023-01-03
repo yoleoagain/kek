@@ -1,0 +1,27 @@
+﻿@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    70% {
+        opacity: translateY(-50%);
+    }
+
+    100% {
+        opacity: translateY(0);
+    }
+}

@@ -27,7 +27,7 @@ module.exports = {
                 options: {
                     configFile: 'tsconfig.client.json',
                 },
-            },
+            }
         ],
     },
 

@@ -1,39 +1,58 @@
-﻿.logo {
-  margin-left: -70px;
-  cursor: pointer;
-  transition: all 1s ease-out;
+﻿@import "../animations.css";
+
+.logo {
+    margin-left: -70px;
+    cursor: pointer;
+    transition: all 1s ease-out;
 }
 
 .logo:hover .d {
-  font-weight: 600;
-  color: #000;
-  display: inline-block;
-  transform: scale(1.4);
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    transform: scale(1.4);
 }
 
 .profile__photo {
-  font-size: 5px;
+    font-size: 5px;
 }
 
 
 .about__info {
-  margin-left: -120px;
-  margin-left: var(--gap);
-  max-width: 550px;
+    margin-left: -120px;
+    margin-left: var(--gap);
+    max-width: 550px;
 }
 
 .core-tech {
-  margin-top: 10px;
+    margin-top: 10px;
+    display: none;
+    animation: slideFromTop .4s linear;
+    animation: fade .4s linear;
+}
+
+#about-text:after {
+    height: 18px;
+    width: 6px;
+    content: " ";
+    background-color: #000;
+    border-radius: 4px;
+    display: inline-flex;
+    margin-left: 4px;
+}
+
+#about-text.completed:after {
+    animation: fade .7s infinite;
 }
 
 .core-tech>*:not(:last-child) {
-  margin-right: var(--gap-half);
+    margin-right: var(--gap-half);
 }
 
 .core-tech>* {
-  background-color: var(--main);
-  color: var(--invert);
-  padding: var(--gap-half);
-  border-radius: 6px;
-  font-size: 12px;
+    background-color: var(--main);
+    color: var(--invert);
+    padding: var(--gap-half);
+    border-radius: 6px;
+    font-size: 12px;
 }
