@@ -1,4 +1,51 @@
-﻿@keyframes fade {
+﻿@keyframes avatarBorder {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: var(--main);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+        position: absolute;
+    }
+
+    99% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(200%);
+        opacity: 0;
+        position: absolute;
+    }
+
+    99% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+    }
+}
+
+
+@keyframes fade {
     0% {
         opacity: 1;
     }
@@ -14,14 +61,17 @@
 
 @keyframes slideFromTop {
     0% {
+        opacity: 0;
         transform: translateY(-100%);
     }
 
     70% {
-        opacity: translateY(-50%);
+        opacity: 1;
+        transform: translateY(-50%);
     }
 
     100% {
-        opacity: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }

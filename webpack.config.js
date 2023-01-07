@@ -7,12 +7,12 @@ const WebpackPluginHashOutput = require('webpack-plugin-hash-output')
 module.exports = {
     name: 'client',
     entry: [
-        path.resolve(__dirname, 'src/client/pages/index.ts')
+        path.resolve(__dirname, 'src/pages/index.ts')
     ],
     mode: 'production',
     output: {
-        path: path.resolve(__dirname + '/public/client/pages'),
-        filename: '[name].[contenthash].js',
+        path: path.resolve(__dirname + '/public/js'),
+        filename: '[name].js',
         publicPath: '',
     },
     resolve: {
@@ -25,7 +25,7 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 options: {
-                    configFile: 'tsconfig.client.json',
+                    configFile: 'tsconfig.json',
                 },
             }
         ],

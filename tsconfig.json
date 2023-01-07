@@ -1,14 +1,18 @@
 ﻿{
-  "compilerOptions": {
-    "target": "ES2016",
-    "module": "ES6",
-    "esModuleInterop": true,
-    "strict": true,
-    "rootDir": "src",
-    "outDir": "build",
-    "moduleResolution": "Node"
-  },
-  "include": [
-    "src/server"
-  ],
+    "compilerOptions": {
+        "target": "ES2016", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+        "lib": [
+            "ES2016",
+            "DOM"
+        ], /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+        "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+        "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+        "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+        "outDir": "./public/js",
+        "rootDir": "src",
+        "module": "commonjs"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
 }
