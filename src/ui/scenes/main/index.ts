@@ -104,8 +104,6 @@ export default class MainScene extends HTMLElement {
             aboutTextNode.classList.remove('hidden')
             await plotTextToNode(aboutTextNode, ABOUT_TEXT, { delay: 10 })
             infoBlock.appendChild(coreTechList)
-            // const docsTechNode = document.querySelector('.core-tech') as HTMLDivElement
-            // docsTechNode.style.display = 'flex'
         }
     }
 

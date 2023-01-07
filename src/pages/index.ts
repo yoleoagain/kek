@@ -5,6 +5,7 @@ import CoreTechList from '../ui/molecules/core-tech-list'
 import MainScene from '../ui/scenes/main'
 import SceneController from '../ui/scenes/index'
 import MainTemplate from '../ui/templates/main-template'
+import TopHeader from '../ui/organisms/header'
 
 customElements.define('my-avatar', Avatar)
 customElements.define('main-title', MainTitle)
@@ -13,3 +14,4 @@ customElements.define('core-tech-list', CoreTechList)
 customElements.define('scene-main', MainScene)
 customElements.define('scene-controller', SceneController)
 customElements.define('main-template', MainTemplate)
+customElements.define('top-header', TopHeader)

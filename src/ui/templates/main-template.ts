@@ -6,8 +6,14 @@ template.innerHTML = /*html*/`
         margin: 0 auto;
         align-self: center;
         padding: var(--gap);
+        height: calc(100vh - 124px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
   </style>
+<top-header></top-header>
 <main class="column container">
     <slot></slot>
 </main>
